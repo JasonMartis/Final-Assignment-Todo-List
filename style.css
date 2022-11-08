@@ -1,0 +1,132 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Example  */
+:root {
+  --body: #a6e4e7;
+  /* --input: #e0ffcd; */
+  --input: #f9f9f9;
+  --list: #f3dfcc;
+  --list2: #fcd7b7;
+  --button: #fdb44b;
+  --colorText: #868686;
+}
+
+/* Example  */
+body {
+  background-color: var(--body);
+  /* text-align: center; */
+}
+
+/* ===== 1. nav ===== */
+/* ===== 2. InputField ===== */
+/* ===== 3. Main ===== */
+
+/* ==================== 
+          1. nav 
+   ==================== */
+
+nav {
+  padding: 2em;
+}
+
+/* ==================== 
+          2. InputField 
+   ==================== */
+
+.addTask {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+#input {
+  width: 31em;
+  padding: 0.5em;
+  background-color: var(--input);
+  border: 5px solid var(--input);
+  border-radius: 5px;
+}
+
+#addButton {
+  padding: 0.5em;
+  color: #ffffff;
+  font-size: large;
+  background-color: var(--button);
+  border: 3px solid var(--colorText);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ==================== 
+          3. Main 
+   ==================== */
+
+main {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#todoList {
+  position: relative;
+  margin: 0.2em 0;
+  width: 45em;
+  padding: 1.5em;
+  /* border: 1px solid black; */
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  /* gap: 1em; */
+}
+
+li:first-child {
+  visibility: hidden;
+  background-color: #ffc145;
+}
+
+#todoList li {
+  position: relative;
+  margin: 0.2em 0;
+  width: 45em;
+  padding: 1.5em;
+  /* border: 1px solid black; */
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1em;
+  background-color: var(--list);
+}
+
+#todoList .classList:nth-child(even) {
+  background-color: var(--list2);
+}
+
+#todoList span {
+  font-size: larger;
+}
+
+#todoList button {
+  position: absolute;
+  right: 0.5em;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background: none;
+  background-image: url("delete.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}

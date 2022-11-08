@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>11. Final Assignment: Todo List</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script defer src="api-client.js"></script>
+    <!-- <script defer src="script.js"></script> -->
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <nav>
+      <h1>To do List</h1>
+    </nav>
+    <div class="addTask">
+      <input
+        id="input"
+        type="text"
+        onfocus="this.value=''"
+        placeholder="Fighting Procrastination One Task at a Time..."
+      />
+      <button id="addButton">Add</button>
+    </div>
+    <main>
+      <ul id="todoList"></ul>
+    </main>
+  </body>
+</html>
